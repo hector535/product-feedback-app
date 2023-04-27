@@ -1,3 +1,221 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --gradient-height-screen-mobile: 72px;
+    --z-index-drawer: 100;
+    --z-index-backdrop: 10;
+  }
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+}
+
+@layer components {
+  .auth-container {
+    @apply mx-auto w-[90%] max-w-[28rem] rounded-lg-2 bg-white p-8 text-sm;
+  }
+
+  .auth-input {
+    @apply w-full rounded-lg-2 border border-gray-300 bg-gray-50 p-2.5;
+  }
+
+  .input {
+    @apply w-full cursor-pointer rounded-md border border-transparent bg-secondary-200 py-[0.6875rem] px-4 text-xs-2 hover:border-[#4661E6] md:text-[0.9375rem] md:leading-[1.375rem];
+  }
+
+  .link {
+    @apply font-medium text-blue-700 hover:underline;
+  }
+
+  .error-message {
+    @apply mt-1 font-medium text-red-500;
+  }
+
+  .gradient {
+    height: var(--gradient-height-screen-mobile);
+    background: radial-gradient(
+      128.88% 128.88% at 103.9% -10.39%,
+      #e84d70 0%,
+      #a337f6 53.09%,
+      #28a7ed 100%
+    );
+  }
+
+  .drawer {
+    position: fixed;
+    top: var(--gradient-height-screen-mobile);
+    bottom: 0;
+    right: -100%;
+    width: 16.875rem;
+    z-index: var(--z-index-drawer);
+    background-color: theme("colors.secondary.200");
+    transition: right 0.3s ease-in;
+  }
+
+  .add-comment-form {
+    position: fixed;
+    bottom: -170px;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    width: 90%;
+    max-width: 45.625rem;
+    z-index: 10;
+    transition: bottom 0.3s;
+    box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (max-width: 374px) {
+    .add-comment-form {
+      bottom: -206px;
+    }
+  }
+
+  .backdrop {
+    position: fixed;
+    inset: 0;
+
+    height: 0;
+    width: 0;
+    opacity: 0;
+
+    top: var(--gradient-height-screen-mobile);
+    background-color: theme("colors.black");
+
+    z-index: var(--z-index-backdrop);
+
+    transition: opacity 0.3s ease-in;
+  }
+
+  .modal {
+    position: fixed;
+    inset: 0;
+    top: -200%;
+
+    margin: auto;
+    border-radius: 10px;
+
+    padding: 1.5rem;
+
+    height: min-content;
+    width: 90%;
+    max-width: 22rem;
+
+    background-color: theme("colors.white");
+    z-index: 20;
+
+    transition: top 0.3s ease-in-out;
+  }
+
+  .backdrop-modal {
+    position: fixed;
+    inset: 0;
+
+    width: 0;
+    height: 0;
+    opacity: 0;
+
+    background-color: theme("colors.black");
+    transition: opacity 0.3s ease-in-out;
+    z-index: 10;
+  }
+
+  .suggestion-list div[data-test-id="virtuoso-item-list"] {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .suggestion-list::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .suggestion-list::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  .suggestion-list::-webkit-scrollbar-thumb {
+    background-color: theme("colors.neutral.400");
+    border-radius: 20px;
+    border: 3px solid transparent;
+    background-clip: padding-box;
+  }
+
+  .comment-container {
+    transition: row-gap 0.3s ease-in;
+  }
+
+  .comment-content {
+    overflow: hidden;
+    transition: height 0.3s ease-in;
+  }
+
+  /* ::-webkit-scrollbar-thumb:hover {
+    background-color: ;
+  } */
+
+  .icon-btn {
+    @apply flex items-center gap-4 hover:underline;
+  }
+
+  .dropdown-shadow,
+  .select-shadow,
+  .container-shadow,
+  .auth-container {
+    box-shadow: 0px 10px 40px -7px rgba(55, 63, 104, 0.350492);
+  }
+
+  .arrow-icon {
+    font-size: 1.75rem;
+    animation-name: upwards;
+    animation-duration: 1.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  .loading-spinner {
+    width: 12px;
+    height: 12px;
+    border: 2px solid #f3f3f3; /* Light grey */
+    border-top-color: #383636; /* Black */
+    border-radius: 50%;
+    animation: spinner 1s linear infinite;
+  }
+
+  @keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes upwards {
+    0% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(-4px);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+    75% {
+      transform: translateY(-4px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+}

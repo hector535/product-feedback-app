@@ -10,7 +10,7 @@ import { ReactComponent as Close } from "@/assets/shared/mobile/icon-close.svg";
 import { ReactComponent as Hamburger } from "@/assets/shared/mobile/icon-hamburger.svg";
 import { ReactComponent as Suggestions } from "@/assets/suggestions/icon-suggestions.svg";
 
-type Props = {
+interface Props extends React.ComponentPropsWithoutRef<"svg"> {
   name:
     | "arrow-down"
     | "arrow-left"
@@ -23,20 +23,29 @@ type Props = {
     | "close"
     | "hamburger"
     | "suggestions";
-};
+}
 
-export const Icon = ({ name }: Props) => {
-  if (name === "arrow-down") return <ArrowDown />;
-  if (name === "arrow-left") return <ArrowLeft />;
-  if (name === "arrow-up") return <ArrowUp />;
-  if (name === "check") return <Check />;
-  if (name === "comments") return <Comments />;
-  if (name === "edit-feedback") return <EditFeedback />;
-  if (name === "new-feedback") return <NewFeedback />;
-  if (name === "plus") return <Plus />;
-  if (name === "close") return <Close />;
-  if (name === "hamburger") return <Hamburger />;
-  if (name === "suggestions") return <Suggestions />;
+export const Icon = ({ className, name, ...props }: Props) => {
+  const arrowClassnames = `stroke-secondary-400 ${className}`;
+
+  if (name === "arrow-down")
+    return <ArrowDown className={arrowClassnames} {...props} />;
+  if (name === "arrow-left")
+    return <ArrowLeft className={arrowClassnames} {...props} />;
+  if (name === "arrow-up")
+    return <ArrowUp className={arrowClassnames} {...props} />;
+  if (name === "check") return <Check className={className} {...props} />;
+  if (name === "comments") return <Comments className={className} {...props} />;
+  if (name === "edit-feedback")
+    return <EditFeedback className={className} {...props} />;
+  if (name === "new-feedback")
+    return <NewFeedback className={className} {...props} />;
+  if (name === "plus") return <Plus className={className} {...props} />;
+  if (name === "close") return <Close className={className} {...props} />;
+  if (name === "hamburger")
+    return <Hamburger className={className} {...props} />;
+  if (name === "suggestions")
+    return <Suggestions className={className} {...props} />;
 
   return null;
 };

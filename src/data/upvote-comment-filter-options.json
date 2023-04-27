@@ -1,0 +1,18 @@
+[
+  {
+    "value": 1,
+    "label": "Most Upvotes"
+  },
+  {
+    "value": 2,
+    "label": "Least Upvotes"
+  },
+  {
+    "value": 3,
+    "label": "Most Comments"
+  },
+  {
+    "value": 4,
+    "label": "Least Comments"
+  }
+]

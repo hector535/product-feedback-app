@@ -1,12 +1,12 @@
 type Props = {
-  color: "purple" | "orange" | "sky";
+  color: "in-progress" | "planned" | "live";
 };
 
 export const Disc = ({ color }: Props) => {
   const colors = {
-    purple: "bg-primary",
-    orange: "bg-accent-orange",
-    sky: "bg-accent-sky",
+    "in-progress": "bg-primary",
+    planned: "bg-accent-orange",
+    live: "bg-accent-sky",
   };
 
   const classnames = `w-2 h-2 rounded-full ${colors[color]}`;

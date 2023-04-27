@@ -1,22 +1,63 @@
-# Frontend Mentor - Product feedback app
+<div id="top"></div>
 
-![Design preview for the Product feedback app coding challenge](./preview.jpg)
+<div align="center">
+  <img src="https://www.frontendmentor.io/static/images/logo-mobile.svg" alt="frontendmentor" width="80">
 
-## Welcome! 👋
+  <h2 align="center">Product feedback app</h2>
+  <p align="center">
+    <a href="https://www.frontendmentor.io/challenges/product-feedback-app-wbvUYqjR6" target="_blank"><strong>Frontend Mentor Challenge</strong></a>
+    <br />
+    <br />
+    <a href="https://invoice-app-4d8a75.netlify.app/">View Demo</a>
+    ·
+    <a href="https://github.com/hector535/product-feedback-app/issues" target="_blank">Report Bug</a>
+    <br />
+    <br />
+  </p>
+</div>
 
-Thanks for purchasing this premium Frontend Mentor coding challenge.
+<!-- Bagdes -->
+<div align="center">
+  <!-- Profile -->
+  <a href="https://www.frontendmentor.io/profile/hector535" target="_blank">
+    <img src="https://img.shields.io/badge/Profile-Héctor%20Figuereo-76b5c5?style=for-the-badge&logo=frontendmentor" alt="Héctor Figuereo">
+  </a>
+  <!-- Status -->
+  <a href="#">
+    <img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge" alt="Status Completed">
+  </a>
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects. These premium challenges are perfect portfolio pieces, so please feel free to use what you create in your portfolio to show others.
+</div>
 
-**To do this challenge, you need a strong understanding of HTML, CSS, and JavaScript.**
+#
 
-## The challenge
+<div align="center">
 
-Your challenge is to build out this product feedback application and get it looking as close to the design as possible.
+![](./design/preview.jpg)
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+</div>
 
-We provide the data in a local `data.json` file, so use that to populate the content on the first load. If you want to take it up a notch, feel free to build this as a full-stack application!
+This is a solution to the [Product feedback app](https://www.frontendmentor.io/challenges/product-feedback-app-wbvUYqjR6) challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+
+<h2 align="center">Links</h2>
+
+- Solution URL: [Product feedback app (Fullstack: React + Nodejs/Express + Postgres) | Frontend Mentor](https://www.frontendmentor.io/solutions/invoice-app-react-typescript-redux-toolkit-scss-iHo0UaB0P0)
+- Live Site URL: [https://invoice-app-4d8a75.netlify.app/](https://invoice-app-4d8a75.netlify.app/)
+
+<br>
+
+## Table of contents
+
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+- [My process](#my-process)
+  - [Built with](#built-with)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
+
+## Overview
+
+### The challenge
 
 Your users should be able to:
 
@@ -30,9 +71,7 @@ Your users should be able to:
 - Upvote product feedback requests
 - **Bonus**: Keep track of any changes, even after refreshing the browser (`localStorage` could be used for this if you're not building out a full-stack app)
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
-
-### Expected Behaviour
+### Expected behaviour
 
 - Suggestions page
   - Only product feedback requests with a status of `suggestion` should be shown on the Suggestions page.
@@ -48,66 +87,58 @@ Want some support on the challenge? [Join our Slack community](https://www.front
   - Use the data from the `currentUser` object in the `data.json` file to populate the user data for any new comments or replies.
   - Any comment/reply can have a maximum of 250 characters.
 
-## Where to find everything
+## My process
 
-Your task is to build out the project to the design file provided. We provide both Sketch and Figma versions of the design, so you can choose which tool you prefer to use. You can download the design file on the platform. **Please be sure not to share them with anyone else.** The design download comes with a `README.md` file as well to help you get set up.
+### Built with
 
-All the required assets for this project are in the `/assets` folder. The assets are already exported for the correct screen size and optimized. Some images are reusable at multiple screen sizes. So if you don't see an image in a specific folder, it will typically be in another folder for that page.
+<!-- Bagdes -->
 
-The design system in the design file will give you more information about the various colors, fonts, and styles used in this project.
+![](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![](https://img.shields.io/badge/sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+![](https://shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=FFF)
+![](https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white&style=for-the-badge)
+![](https://img.shields.io/badge/-React%20Router-CA4245?style=for-the-badge&logo=react-router&logoColor=FFF)
+![](https://img.shields.io/badge/-React%20Hook%20Form-EC5990?style=for-the-badge&logo=react-hook-form&logoColor=white)
+![](https://img.shields.io/badge/-Redux%20Toolkit%20-764ABC?style=for-the-badge&logo=redux&logoColor=white)
+![](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
-## Building your project
+#### Front-end
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+- Semantic HTML5 markup
+- React
+- TypeScript
+- Tailwinds
+- Zustand
+- React Router DOM
+- React Hook Form
+- ZOD
+- Local Storage
+- CSS Grid
+- Flexbox
 
-1. Separate the `starter-code` from the rest of this project and rename it to something meaningful for you. Initialize the codebase as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/). **⚠️ IMPORTANT ⚠️: There are already a couple of `.gitignore` files in this project. Please do not remove them or change the content of the files. If you create a brand new project, please use the `.gitignore` files provided in your new codebase. This is to avoid the accidental upload of the design files to GitHub. With these premium challenges, please be sure not to share the design files in your GitHub repo. Thanks!**
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+#### Back-end
 
-## Deploying your project
+- Node.js
+- Express.js
+- Mikro-ORM
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+#### Database
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+- PostgreSQL
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+### Useful resources
 
-## Create a custom `README.md`
+- [TypeScript](https://www.typescriptlang.org/docs/)
+- [React](https://reactjs.org/docs/getting-started.html)
+- [React Context API](https://reactjs.org/docs/context.html)
+- [React Router](https://reactrouter.com/en/main)
+- [React Hook Form](https://react-hook-form.com/get-started)
+- [Redux Toolkit](https://redux-toolkit.js.org/)
+- [ZOD](https://zod.dev/?id=arrays)
+- [CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+- [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [SASS](https://sass-lang.com/documentation/modules)
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+## Author
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
-
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
-
-## Submitting your solution
-
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
-
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
-
-**⚠️ IMPORTANT ⚠️: With these premium challenges, please be sure not to upload the design files to GitHub when you're submitting to the platform and sharing it around. If you've created a brand new project, the easiest way to do that is to copy across the `.gitignore` provided in this starter project.**
-
-## Sharing your solution
-
-There are multiple places you can share your solution:
-
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
-
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
-
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
-
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-**Have fun building!** 🚀
+- Frontend Mentor - [@hector535](https://www.frontendmentor.io/profile/hector535)
