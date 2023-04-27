@@ -1,4 +1,8 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  createHashRouter,
+} from "react-router-dom";
 import { authRoutes, mainRoutes } from "@/routes";
 import { useStore } from "@/store";
 import { Button, Modal } from "@/components";
@@ -7,7 +11,7 @@ const App = () => {
   const isLoggedIn = useStore((state) => state.isLoggedIn);
   const isErrorModalOpen = useStore((state) => state.toggleableElements.error);
   const toggleElement = useStore((state) => state.toggleElement);
-  const router = createBrowserRouter(isLoggedIn ? mainRoutes : authRoutes);
+  const router = createHashRouter(isLoggedIn ? mainRoutes : authRoutes);
 
   return (
     <>
