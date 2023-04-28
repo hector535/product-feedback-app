@@ -41,7 +41,7 @@ This is a solution to the [Product feedback app](https://www.frontendmentor.io/c
 
 <h2 align="center">Links</h2>
 
-- Solution URL: [Product Fedback App | Full Stack (PERN) | Frontend Mentor](https://www.frontendmentor.io/solutions/invoice-app-react-typescript-redux-toolkit-scss-iHo0UaB0P0)
+- Solution URL: [Product Fedback App | Full Stack (PERN) | Frontend Mentor](https://www.frontendmentor.io/solutions/product-feedback-app-full-stack-in-progress-SN70KVTMfi)
 - Live Site URL: [https://product-feedback-client.onrender.com/#/auth/signin](https://product-feedback-client.onrender.com/#/auth/signin)
 
 <br>
