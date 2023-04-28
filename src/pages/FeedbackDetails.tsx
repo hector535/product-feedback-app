@@ -73,7 +73,6 @@ const FeedbackDetails = () => {
           onClick={() => {
             toggleElement("comment-form", false);
             setComment(null, "add");
-            setFeedback(null);
             navigate(-1);
           }}
         >
