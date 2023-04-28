@@ -54,7 +54,7 @@ const HomePage = () => {
   );
 
   return (
-    <div className="grid h-screen max-w-[73.75rem] grid-rows-[auto_1fr] md:grid-rows-[auto_auto_1fr] md:gap-10 md:px-10 md:pt-14 lg:mx-auto lg:grid-cols-[15.9375rem_minmax(0,_1fr)] lg:grid-rows-[min-content_auto] lg:gap-[1.875rem]">
+    <div className="page-list grid max-w-[73.75rem] grid-rows-[auto_1fr] md:grid-rows-[auto_auto_1fr] md:gap-10 md:px-10 md:pt-14 lg:mx-auto lg:grid-cols-[15.9375rem_minmax(0,_1fr)] lg:grid-rows-[min-content_auto] lg:gap-[1.875rem]">
       <WelcomeLogout className="hidden md:-mb-6 md:flex md:flex-wrap md:items-center md:justify-between lg:col-span-2 lg:col-start-1 lg:-mb-2" />
       <header className="md:grid md:grid-cols-3 md:grid-rows-[11.125rem] md:gap-3 lg:grid-cols-none lg:grid-rows-none lg:content-start lg:gap-6 ">
         <Gradient className="lg:h-[8.5625rem] " />
@@ -67,7 +67,7 @@ const HomePage = () => {
 
         <Roadmap className="hidden md:grid md:gap-6" />
       </header>
-      <main className="grid grid-rows-[auto_1fr]">
+      <main className="grid grid-rows-[auto_1fr] overflow-auto">
         <Toolbar className="grid gap-2 text-secondary-325 xs:flex xs:items-center xs:justify-between md:justify-start md:gap-0 md:rounded-lg-2">
           <Icon name="suggestions" className="hidden md:mr-4 md:block" />
           <span className="hidden text-lg font-bold leading-[1.625rem] md:mr-8 md:block">

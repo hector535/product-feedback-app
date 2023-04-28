@@ -46,7 +46,7 @@ export const Dropdown = ({ className, options, value, onChange }: Props) => {
       onBlur={onBlurFilter}
     >
       <div className="flex items-center gap-2 text-secondary-325">
-        <p className="text-sm">
+        <p className="text-xs-2">
           Sorted by:{" "}
           <span className="font-bold">
             {options.find((o) => o.value === value)?.label}

@@ -21,7 +21,7 @@ export const Drawer = ({ className, isOpen, children, onClose }: Props) => {
       {ReactDOM.createPortal(
         <>
           <div
-            className={`drawer md:-right-full ${className} ${drawerClassnames}`}
+            className={`drawer overflow-auto md:-right-full ${className} ${drawerClassnames}`}
           >
             {children}
           </div>

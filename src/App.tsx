@@ -1,17 +1,21 @@
-import {
-  createBrowserRouter,
-  RouterProvider,
-  createHashRouter,
-} from "react-router-dom";
+import { useEffect } from "react";
+import { RouterProvider, createHashRouter } from "react-router-dom";
 import { authRoutes, mainRoutes } from "@/routes";
 import { useStore } from "@/store";
 import { Button, Modal } from "@/components";
+import { checkIsIOS, disableIosTextFieldZoom } from "@/utils";
 
 const App = () => {
   const isLoggedIn = useStore((state) => state.isLoggedIn);
   const isErrorModalOpen = useStore((state) => state.toggleableElements.error);
   const toggleElement = useStore((state) => state.toggleElement);
   const router = createHashRouter(isLoggedIn ? mainRoutes : authRoutes);
+
+  useEffect(() => {
+    if (checkIsIOS()) {
+      disableIosTextFieldZoom();
+    }
+  }, []);
 
   return (
     <>
