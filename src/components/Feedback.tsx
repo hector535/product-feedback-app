@@ -14,7 +14,7 @@ export const Feedback = ({ feedback }: Props) => {
   const colors: Record<string, string> = {
     "in-progress": "border-t-primary",
     planned: "border-t-accent-orange",
-    live: "border-t-accent-red",
+    live: "border-t-accent-sky",
   };
 
   return (

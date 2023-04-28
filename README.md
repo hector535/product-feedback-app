@@ -8,7 +8,7 @@
     <a href="https://www.frontendmentor.io/challenges/product-feedback-app-wbvUYqjR6" target="_blank"><strong>Frontend Mentor Challenge</strong></a>
     <br />
     <br />
-    <a href="https://invoice-app-4d8a75.netlify.app/">View Demo</a>
+    <a href="https://product-feedback-client.onrender.com/#/auth/signin">View Demo</a>
     ·
     <a href="https://github.com/hector535/product-feedback-app/issues" target="_blank">Report Bug</a>
     <br />
@@ -41,8 +41,8 @@ This is a solution to the [Product feedback app](https://www.frontendmentor.io/c
 
 <h2 align="center">Links</h2>
 
-- Solution URL: [Product feedback app (Fullstack: React + Nodejs/Express + Postgres) | Frontend Mentor](https://www.frontendmentor.io/solutions/invoice-app-react-typescript-redux-toolkit-scss-iHo0UaB0P0)
-- Live Site URL: [https://invoice-app-4d8a75.netlify.app/](https://invoice-app-4d8a75.netlify.app/)
+- Solution URL: [Product Fedback App | Full Stack (PERN) | Frontend Mentor](https://www.frontendmentor.io/solutions/invoice-app-react-typescript-redux-toolkit-scss-iHo0UaB0P0)
+- Live Site URL: [https://product-feedback-client.onrender.com/#/auth/signin](https://product-feedback-client.onrender.com/#/auth/signin)
 
 <br>
 
@@ -91,36 +91,24 @@ Your users should be able to:
 
 ### Built with
 
-<!-- Bagdes -->
-
-![](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![](https://img.shields.io/badge/sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
-![](https://shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=FFF)
-![](https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white&style=for-the-badge)
-![](https://img.shields.io/badge/-React%20Router-CA4245?style=for-the-badge&logo=react-router&logoColor=FFF)
-![](https://img.shields.io/badge/-React%20Hook%20Form-EC5990?style=for-the-badge&logo=react-hook-form&logoColor=white)
-![](https://img.shields.io/badge/-Redux%20Toolkit%20-764ABC?style=for-the-badge&logo=redux&logoColor=white)
-![](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-
 #### Front-end
 
-- Semantic HTML5 markup
-- React
+- React.js
 - TypeScript
-- Tailwinds
+- React-Router-DOM
+- React-Hook-Form
+- React-Query
 - Zustand
-- React Router DOM
-- React Hook Form
-- ZOD
-- Local Storage
-- CSS Grid
-- Flexbox
+- Zod
+- Tailwinds
 
 #### Back-end
 
 - Node.js
+- TypeScript
 - Express.js
 - Mikro-ORM
+- Zod
 
 #### Database
 
@@ -128,16 +116,18 @@ Your users should be able to:
 
 ### Useful resources
 
-- [TypeScript](https://www.typescriptlang.org/docs/)
 - [React](https://reactjs.org/docs/getting-started.html)
-- [React Context API](https://reactjs.org/docs/context.html)
+- [TypeScript](https://www.typescriptlang.org/docs/)
 - [React Router](https://reactrouter.com/en/main)
 - [React Hook Form](https://react-hook-form.com/get-started)
-- [Redux Toolkit](https://redux-toolkit.js.org/)
-- [ZOD](https://zod.dev/?id=arrays)
-- [CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
-- [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-- [SASS](https://sass-lang.com/documentation/modules)
+- [React-Query](https://tanstack.com/query/latest/)
+- [Zustand](https://github.com/pmndrs/zustand)
+- [Zod](https://zod.dev/?id=arrays)
+- [Tailwinds](https://tailwindcss.com/)
+- [Node.js](https://nodejs.org/en)
+- [Express](https://expressjs.com/en/starter/installing.html)
+- [Mikro-ORM](https://mikro-orm.io/)
+- [PostgreSQL](https://www.postgresql.org/)
 
 ## Author
 

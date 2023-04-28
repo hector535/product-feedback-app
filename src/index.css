@@ -166,10 +166,6 @@
     transition: height 0.3s ease-in;
   }
 
-  /* ::-webkit-scrollbar-thumb:hover {
-    background-color: ;
-  } */
-
   .icon-btn {
     @apply flex items-center gap-4 hover:underline;
   }
