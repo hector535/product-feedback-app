@@ -71,7 +71,7 @@ const RoadmapPage = () => {
   ];
 
   return (
-    <div className="page-list grid max-w-[69.375rem] grid-rows-[auto_1fr] md:mx-auto md:w-[90%] md:py-10">
+    <div className="grid h-screen max-w-[69.375rem] grid-rows-[auto_minmax(375px,_1fr)] md:mx-auto md:w-[90%] md:py-10">
       <header>
         <Toolbar className="flex items-center justify-between py-6 md:mb-8 md:rounded-lg-2 md:py-7">
           <div>

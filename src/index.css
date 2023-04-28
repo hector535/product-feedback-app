@@ -19,26 +19,6 @@
     overflow-wrap: break-word;
     word-break: break-word;
   }
-
-  .page-list {
-    height: 100vh;
-  }
-
-  @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
-    html {
-      transform: rotate(-90deg);
-      transform-origin: left top;
-      width: 100vh;
-      overflow: hidden;
-      position: absolute;
-      top: 100%;
-      left: 0;
-    }
-
-    .page-list {
-      height: 100vw;
-    }
-  }
 }
 
 @layer components {
@@ -121,7 +101,7 @@
   .modal {
     position: fixed;
     inset: 0;
-    top: -200%;
+    top: -470%;
 
     margin: auto;
     border-radius: 10px;
@@ -156,15 +136,21 @@
     gap: 1rem;
   }
 
-  .suggestion-list::-webkit-scrollbar {
+  body::-webkit-scrollbar,
+  .suggestion-list::-webkit-scrollbar,
+  .drawer::-webkit-scrollbar {
     width: 10px;
   }
 
-  .suggestion-list::-webkit-scrollbar-track {
+  body::-webkit-scrollbar-track,
+  .suggestion-list::-webkit-scrollbar-track,
+  .drawer::-webkit-scrollbar-track {
     background-color: transparent;
   }
 
-  .suggestion-list::-webkit-scrollbar-thumb {
+  body::-webkit-scrollbar-thumb,
+  .suggestion-list::-webkit-scrollbar-thumb,
+  .drawer::-webkit-scrollbar-thumb {
     background-color: theme("colors.neutral.400");
     border-radius: 20px;
     border: 3px solid transparent;
