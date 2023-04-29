@@ -30,6 +30,7 @@ const FeedbackPage = () => {
     onSuccess: async () => {
       await queryClient.invalidateQueries({ queryKey: ["feedbacks"] });
       await queryClient.invalidateQueries({ queryKey: ["countByStatus"] });
+      toggleElement("delete-feedback", false);
       navigate("/");
     },
   };
